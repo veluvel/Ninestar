@@ -4,10 +4,11 @@
 .pri-bg{
 	background: #eb5d1e !important;
 }
-
-
 .sec-color{
     color: #7a6960 !important;
+}
+.hover:hover{
+	color: #eb5d1e !important;
 }
 .fs-10{
 	font-size: 3rem !important;
@@ -122,50 +123,158 @@
 
 /*-------------Portfolio end-------------*/
 /*===team hover===*/
-.t-img{
-	text-align: center;
-    position: relative;
-    overflow: hidden;
-	z-index:0;
-	
+.teamhead h5{
+	font-size:2rem !important;
+	font-weight:700 !important;
+	color:#c2b7b1 !important;
 }
-.t-img:hover .member-info{
-	opacity: 1;	
+.teamhead h2{
+	color:#4e4039 !important;
+	font-size:2rem !important;
+	font-weight:700 !important;
+
 }
-.member-info{
-	opacity: 0;
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    transition: 0.2s;
-	background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.8));
+.teamhead h2::after{
+	content:"";
+	position:relative;
+	width:60px;
+	height:4px;
+	background-color:#eb5d1e;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	left:47%;
+	top:20px;
 }
-.social{
-	background-color:rgba(0,0,0,0.7);
+.teamimage{
+	display:flex !important;
+	flex-wrap:wrap !important;
+	width:100% !important;
+	justify-content:space-between !important;
+}
+.team1{
+	width:100% !important;
+	height:auto !important;
+	margin-bottom:1rem !important;
+	position:relative;
+	width:100%;
+}
+.teaminfo{
+	width:100%;
+	height:auto;
+}
+.teamname{
+	position:absolute;
+	opacity:0;
+	top:0;
+	right:10px;
+	bottom:-10px;
+	left:10px;
+	text-align:center;
+	background:linear-gradient(rgba(78, 64, 57, 0.1),rgba(78, 64, 57, 0.8));
+	color:white;
+	padding-top:160px;
+	line-height:1.5;	
+}
+.team1:hover .teamname{
+	opacity:1;
+	bottom: 0px;
+	transition:all 0.2s ease;
+}
+.teamicon{
+	position:absolute;
+	opacity:0;
+	top:0;
+	right:10px;
+	bottom:0;
+	left:-25px;
+	width:35px;
+	display:flex;
+	justify-content: space-around;
+	flex-direction:column;
+	background-color:#4e403987;
+}
+.teamicon iconify-icon{
+	padding:10px;
+	font-size:1.2rem;
 	color:#fff;
-	padding:10px 15px;
 }
-.social i{
-	display:block;
-	margin-top:15px;
+.teamicon iconify-icon:hover{
+	color: #eb5d1e;
 }
-@media(min-width:390px){
-	.member-info2
-	{
-	bottom: 21px;
-    right: 92px;
-	}
+.team1:hover .teamicon{
+	opacity:1;
+	left:11px;
+	transition: ease all 0.4s;
+}
+@media(min-width:768px){
+
+.team1{
+		width:50% !important;
+		height:auto !important;
+		margin-bottom:1rem !important;
+}
 }
 @media(min-width:1024px){
-.member-info2{
-	position:absolute;
-	bottom:12px;
-	right:20px;
-	color:#fff;
+
+.team1{
+		width:25% !important;
+		height:auto !important;
+		margin-bottom:1rem !important;
 }
 }
+/* .t-img{ */
+	/* text-align: center; */
+    /* position: relative; */
+    /* overflow: hidden; */
+	/* z-index:0; */
+	
+/* } */
+/* .t-img:hover .member-info{ */
+	/* opacity: 1;	 */
+/* } */
+/* .member-info{ */
+    /* text-align: center; */
+    /* margin-bottom: 20px; */
+    /* background: #343a40; */
+    /* position: relative; */
+    /* overflow: hidden; */
+    /* top: -305px; */
+    /* left: 0px; */
+    /* height: 305px; */
+	/* opacity: 0; */
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* top: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    /* transition: 0.2s; */
+	/* background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.8)); */
+/* } */
+/* .social{ */
+	/* background-color:rgba(0,0,0,0.7); */
+	/* color:#fff; */
+	/* padding:10px 15px; */
+/* } */
+/* .social i{ */
+	/* display:block; */
+	/* margin-top:15px; */
+/* } */
+/* @media(min-width:390px){ */
+	/* .member-info2 */
+	/* { */
+	/* bottom: 21px; */
+    /* right: 92px; */
+	/* } */
+/* } */
+/* @media(min-width:1024px){ */
+/* .member-info2{ */
+	/* position:absolute; */
+	/* bottom:12px; */
+	/* right:20px; */
+	/* color:#fff; */
+/* } */
+/* } */
 
 
 /*-------------faq start-------------*/
@@ -181,6 +290,13 @@
 /*-------------Client section start-------------*/
 #clients{
 	background: #fef8f5;
+}
+#clients img{
+    width: 80px;
+    filter: contrast(0.5);
+}
+#clients img:hover{
+	filter: contrast(100%);
 }
 /*-------------Client section end-------------*/
 
@@ -201,6 +317,23 @@
 }
 .bor-top-color{
 	border-top: 3px solid #eb5d1e;
+}
+/* ************** */
+.foot-2 .iconlast iconify-icon{
+	height:44px;
+	width:44px ;
+	display:flex ;
+	border-radius:50% ;
+	justify-content:center;
+	align-items:center ;
+	color:white ;
+	background-color:#EB5D1E ;
+}
+#use-link {
+	margin-left:-2rem ;
+}
+.iconlast li{
+	padding:0.2rem ;
 }
 /*-------------Client section end-------------*/
 #join{
