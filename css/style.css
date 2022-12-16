@@ -34,6 +34,7 @@
 #banner{
 	background: #fef8f5;
     border-bottom: 2px solid #fcebe3;
+	
 }
 #banner img{
 	position: relative;
@@ -122,16 +123,16 @@
 }
 
 /*-------------Portfolio end-------------*/
-/*===team hover===*/
+/*--------------Team---------------*/
 .teamhead h5{
-	font-size:2rem !important;
-	font-weight:700 !important;
-	color:#c2b7b1 !important;
+	font-size:2rem ;
+	font-weight:700;
+	color:#c2b7b1 ;
 }
 .teamhead h2{
-	color:#4e4039 !important;
-	font-size:2rem !important;
-	font-weight:700 !important;
+	color:#4e4039 ;
+	font-size:2rem ;
+	font-weight:700;
 
 }
 .teamhead h2::after{
@@ -146,16 +147,17 @@
 	left:47%;
 	top:20px;
 }
-.teamimage{
-	display:flex !important;
-	flex-wrap:wrap !important;
-	width:100% !important;
-	justify-content:space-between !important;
+.teamimg{
+	display:flex ;
+	flex-wrap:wrap;
+	width:100%;
+	justify-content:space-between;
+	
 }
 .team1{
-	width:100% !important;
-	height:auto !important;
-	margin-bottom:1rem !important;
+	width:100% ;
+	height:auto ;
+	margin-bottom:1rem;
 	position:relative;
 	width:100%;
 }
@@ -210,17 +212,20 @@
 @media(min-width:768px){
 
 .team1{
-		width:50% !important;
-		height:auto !important;
-		margin-bottom:1rem !important;
+		width:50% ;
+		height:auto;
+		margin-bottom:1rem ;
+}
+.teamimg{
+	margin: auto !important;
 }
 }
 @media(min-width:1024px){
 
 .team1{
-		width:25% !important;
-		height:auto !important;
-		margin-bottom:1rem !important;
+		width:25% ;
+		height:auto ;
+		margin-bottom:1rem ;
 }
 }
 /* .t-img{ */
