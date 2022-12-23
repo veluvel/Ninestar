@@ -300,6 +300,11 @@ input:focus{
 .news form input[type=submit]:hover{
 	background:#c54811;
 }
+
+.team-play{
+	width: 50%;
+	margin-left: 60px;
+}
 /**/
 
 /*-------------Contacts section end-------------*/
